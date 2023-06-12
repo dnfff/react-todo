@@ -6,17 +6,25 @@ html, body {
   flex-direction: column;
   min-height: 100vh;
 
-  font-family: 'DM Sans', sans-serif;
+  font-family:'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e4e3e3;
+  background: rgb(170,186,255);
+  background: radial-gradient(circle, rgba(170,186,255,0.2777485994397759) 37%, rgba(255,255,255,1) 100%);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 600px;
+  height: 100vh;
   transition: .1s;
+  display: flex;
+  align-items: center;
 }
 
 .none {
@@ -24,34 +32,43 @@ html, body {
 }
 
 .section {
-  height: 100vh; 
+  height: 800px; 
   width: 100%;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
   transition: .1s; 
+
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.534);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
 }
 
 .block {
-  height: 390px;
+  height: 540px;
   width: 90%;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* z-index: 101; */
+  border-radius: 20px;
 
-  box-shadow: 0 0 5px 1px rgba(44, 44, 44, 0.671);
-
-  background-color: #ffffff;
   transition: .1s;
+
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.534);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
 }
 
 .head {
   margin: 15px;
   font-size: 9vh;
-  color: #6800003f;
+  margin-top: 100px;
+  color: #00000085;
   font-family:'Courier New', Courier, monospace;
   letter-spacing: -5px;
   transition: .1s;
@@ -62,11 +79,18 @@ html, body {
   height: 50px;
   font-size: 20px;
   margin-top: 20px;
-  color: #7e7e7e;
+  margin-bottom: 20px;
+  color: #000000;
   border: none;
   text-align: center;
   resize: none;
   transition: .1s;
+  font-family:'Poppins', sans-serif;
+  background: rgba(0, 140, 255, 0.075);
+  border-radius: 16px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.534);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
 }
 
 input:focus, textarea:focus, select:focus {
@@ -97,13 +121,16 @@ input:focus, textarea:focus, select:focus {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  background-color: #6800003f;
-  color: #7e7e7e;
+  font-size: 15px;
+  font-family:'Poppins', sans-serif;
+  background: rgba(0, 140, 255, 0.075);
+  color: #000000de;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.534);
   transition: .1s;
 }
 
 .close {
-  color: rgb(192, 192, 192);
+  color: rgb(104, 104, 104);
   text-decoration: line-through 1px #000000;
 }
 
@@ -119,7 +146,7 @@ input:focus, textarea:focus, select:focus {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  background-color: #ffffff3f;
+  background-color: #ffffff00;
   transition: .1s;
 }
 

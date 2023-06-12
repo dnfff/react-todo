@@ -28,7 +28,7 @@ function AddTodo({todo, setTodo }) {
                content='text'
                value={value}
                onChange={(e) => setValue(e.target.value)} />
-               <button className="btn" onClick={saveTodo}>save</button>
+               <button className="btn" onClick={saveTodo}>Add</button>
     </div>
   )
 }
